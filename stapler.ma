@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: stapler.ma
-//Last modified: Tue, Apr 14, 2015 03:56:54 PM
+//Last modified: Tue, Apr 14, 2015 03:57:28 PM
 //Codeset: 1252
 requires maya "2015";
 currentUnit -l centimeter -a degree -t film;
@@ -205,7 +205,7 @@ createNode parentConstraint -n "grp_stapler_parentConstraint1" -p "grp_stapler";
 	setAttr ".erp" yes;
 	setAttr ".lo" yes;
 	setAttr -k on ".w0";
-createNode transform -n "ctrl_stapler_base";
+createNode transform -n "ctrl_stapler_base" -p "stapler";
 createNode nurbsCurve -n "ctrl_stapler_baseShape" -p "ctrl_stapler_base";
 	setAttr -k off ".v";
 	setAttr ".tw" yes;
