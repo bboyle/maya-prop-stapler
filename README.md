@@ -1,2 +1,5 @@
 # maya-prop-stapler
-A personal challenge: modeling and rigging a stapler
+
+![Blue plastic bucket with white handle](stapler.png)
+
+A prop stapler for use in Maya.
