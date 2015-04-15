@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: stapler.ma
-//Last modified: Wed, Apr 15, 2015 07:28:18 PM
+//Last modified: Wed, Apr 15, 2015 07:31:50 PM
 //Codeset: 1252
 requires maya "2015";
 currentUnit -l centimeter -a degree -t film;
@@ -135,6 +135,10 @@ createNode transform -n "ctrl_stapler_arm" -p "grp_stapler";
 	setAttr -l on ".sz";
 	setAttr ".rp" -type "double3" -3.2202596250121394 1.6609880749574097 0 ;
 	setAttr ".sp" -type "double3" -3.2202596250121394 1.6609880749574097 0 ;
+	setAttr ".mnrl" -type "double3" -45 -45 -7.92 ;
+	setAttr ".mxrl" -type "double3" 45 45 0 ;
+	setAttr ".mrze" yes;
+	setAttr ".xrze" yes;
 createNode nurbsCurve -n "ctrl_stapler_armShape" -p "ctrl_stapler_arm";
 	setAttr -k off ".v";
 	setAttr ".tw" yes;
